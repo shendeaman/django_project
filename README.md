@@ -9,7 +9,7 @@ Presently, the application is divided into a few sections. The first one deals w
 check the expense status shared amongst various users in a group by clicking on 'Expense tracking status'.
    
 _3. What are the dependencies that come with the application?_
-Here, I'm connecting with the local database named 'TestDB'available at the MS SQL Server. It has 2 tables, named dbo.ExpenseSharer which stores the expense details of         various users in a group and dbo.Groups that store the information related to the name of the group & number of users available in that group.
+Here, I'm connecting with the local database named 'TestDB'available at the MS SQL Server. It has 2 tables, named dbo.ExpenseSharer which stores the expense details of         various users in a group and dbo.Groups that store the information related to the name of the group & number of users available in that group. The key point to remember is that Django officially supports PostgreSQL, MariaDB, MySQL, Oracle, and SQLite so to connect with MS SQL Server I needed to use the PyODBC module of Python.
 
 _4. Functionalities that need to be added_
 As of now, I'm yet to implement a simplified view of the expenses. Also, need to create a scheduler that will additionally send emails once a new expense is added to a        group.
